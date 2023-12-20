@@ -43,7 +43,7 @@ df = pd.DataFrame(records)
 # Calculate the difference in price between the second and first requests
 df["Diff_Price"] = df.groupby("Crypto")["Price"].diff() #(How to handle decimal changes. will that be necessary)
 
-# Save the DataFrame as CSV file
+# Save the DataFrame as new  CSV file
 df.to_csv("done_crypto_prices_10.csv", index=False)
 
 
